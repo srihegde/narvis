@@ -1,6 +1,6 @@
 # NARVis Project Website
 
-This repository contains the source code and assets for the NARVis project page:
+This repository contains the source code and assets for the NARVis project page: https://srihegde.github.io/narvis/
 
 **NARVis: Neural Accelerated Rendering for Real-Time Scientific Point Cloud Visualization**
 
