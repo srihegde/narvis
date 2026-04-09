@@ -155,3 +155,38 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.dataset-panel table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px;
+  border: none !important;
+}
+
+.dataset-panel tbody,
+.dataset-panel tr {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.dataset-panel td {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0;
+  background: transparent;
+}
+
+.dataset-panel img {
+  width: 100% !important;
+  height: 190px !important;
+  object-fit: contain !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+#generalizability-across-panel img {
+  height: 250px !important;
+}

@@ -75,4 +75,37 @@ $(document).ready(function() {
 
     bulmaSlider.attach();
 
+    $('.dataset-tab-button').on('click', function() {
+      var $container = $(this).closest('.content');
+      var targetId = $(this).data('target');
+
+      $container.find('.dataset-tab-button').removeClass('is-link is-selected').addClass('is-light');
+      $(this).removeClass('is-light').addClass('is-link is-selected');
+
+      $container.find('.dataset-panel').addClass('is-hidden');
+      $('#' + targetId).removeClass('is-hidden');
+    });
+
+    $('.resolution-tab-button').on('click', function() {
+      var $container = $(this).closest('.content');
+      var targetId = $(this).data('target');
+
+      $container.find('.resolution-tab-button').removeClass('is-link is-selected').addClass('is-light');
+      $(this).removeClass('is-light').addClass('is-link is-selected');
+
+      $container.find('.resolution-panel').addClass('is-hidden');
+      $('#' + targetId).removeClass('is-hidden');
+    });
+
+    $('.generalizability-tab-button').on('click', function() {
+      var $container = $(this).closest('.content');
+      var targetId = $(this).data('target');
+
+      $container.find('.generalizability-tab-button').removeClass('is-link is-selected').addClass('is-light');
+      $(this).removeClass('is-light').addClass('is-link is-selected');
+
+      $container.find('.generalizability-panel').addClass('is-hidden');
+      $('#' + targetId).removeClass('is-hidden');
+    });
+
 })

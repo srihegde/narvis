@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="NARVis: Neural Accelerated Rendering for Real-Time Scientific Point Cloud Visualization.">
+  <meta name="keywords" content="NARVis, Neural Rendering, Point Cloud Visualization, Scientific Visualization">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>NARVis: Neural Accelerated Rendering for Real-Time Scientific Point Cloud Visualization</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/favicon.png"> <!-- Favicon author: MetamorphLab-->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -42,7 +42,7 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -52,7 +52,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
+      <a class="navbar-item" href="https://narvis.umd.edu">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
@@ -63,24 +63,15 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
+          <a class="navbar-item" href="https://www.umd.edu">
+            University of Maryland
           </a>
         </div>
       </div>
     </div>
 
   </div>
-</nav>
+</nav> -->
 
 
 <section class="hero">
@@ -88,39 +79,37 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">NARVis: Neural Accelerated Rendering for Real-Time Scientific Point Cloud Visualization</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://srihegde.github.io">Srinidhi Hegde</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=1whTblAAAAAJ&hl=en">Kaur Kullman</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
-            </span>
+              <a href="https://istcolloq.gsfc.nasa.gov/thomas-grubb/">Thomas Grubb</a><sup>3</sup>,</span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-            </span>
+              <a href="https://acd-ext.gsfc.nasa.gov/People/Lait/">Leslie Lait</a><sup>3</sup>,</span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
+              <a href="https://cas.hamptonu.edu/faculty/stephen-guimond/">Stephen Guimond</a><sup>4</sup>,</span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
-            </span>
+              <a href="https://www.cs.umd.edu/~zwicker/">Matthias Zwicker</a><sup>1</sup></span>
           </div>
-
+                  
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>University of Maryland, College Park,</span>
+            <span class="author-block"><sup>2</sup>University of Maryland, Baltimore County,</span>
+            <span class="author-block"><sup>3</sup>NASA,</span>
+            <span class="author-block"><sup>4</sup>Hampton University</span>
           </div>
-
           <div class="column has-text-centered">
+
+            <div class="is-size-4 publication-authors" style="margin-top: 0.5rem; margin-bottom: 1rem;">
+              <strong>PacificVis 2026</strong>
+            </div>
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://arxiv.org/pdf/2407.19097"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -128,46 +117,45 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
               <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+              <!-- <span class="link-block">
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/VALIXR-Neural-Rendering/narvis"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
-                  </a>
+                </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
 
+            <div class="columns is-centered is-mobile" style="margin-top: 1.5rem;">
+              <div class="column is-4">
+                <figure class="image">
+                  <img src="./static/images/hurricane_gif.gif" alt="Hurricane visualization GIF" style="width: 100%; height: 260px; object-fit: cover; clip-path: inset(10px 0 10px 0);">
+                </figure>
+              </div>
+              <div class="column is-4">
+                <figure class="image">
+                  <img src="./static/images/storms_gif.gif" alt="Storms visualization GIF" style="width: 100%; height: 260px; object-fit: cover; clip-path: inset(10px 0 10px 0);">
+                </figure>
+              </div>
+              <div class="column is-4">
+                <figure class="image">
+                  <img src="./static/images/mb_gif.gif" alt="MB visualization GIF" style="width: 100%; height: 260px; object-fit: cover; clip-path: inset(10px 0 10px 0);">
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -175,76 +163,13 @@
   </div>
 </section>
 
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        <strong>TLDR: </strong><span class="dnerf">NARVis</span> enables high-quality visualization and stylization of large scientific point clouds (<1B points) at interactive frame rates using neural rendering.
       </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -256,50 +181,18 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-centered" style="margin-bottom: 1.5rem;">
+          <img src="./static/images/teaser.png" alt="NARVis teaser figure" style="width: 100%; height: auto;">
+        </div>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Exploring scientific datasets with billions of samples in real-time visualization presents a challenge - balancing high-fidelity rendering with speed. This work introduces a neural accelerated renderer, NARVis, that uses the neural deferred rendering framework to visualize large-scale scientific point cloud data. NARVis augments a real-time point cloud rendering pipeline with high-quality neural post-processing, making the approach ideal for interactive visualization at scale. Specifically, we render the multi-attribute point cloud using a high-performance multi-attribute rasterizer and train a neural renderer to capture the desired post-processing effects from a conventional high-quality renderer. NARVis is effective in visualizing complex multidimensional Lagrangian flow fields and photometric scans of a large terrain as compared to the state-of-the-art high-quality renderers. Extensive evaluations demonstrate that NARVis prioritizes speed and scalability while retaining high visual fidelity. We achieve competitive frame rates of >126 fps for interactive rendering of >350M points (i.e., an effective throughput of >44 billion points per second) using ~12 GB of memory on RTX 2080 Ti GPU. Furthermore, NARVis is generalizable across different point clouds with similar visualization needs and the desired post-processing effects could be obtained with substantial high quality even at lower resolutions of the original point cloud, further reducing the memory requirements.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
@@ -307,135 +200,409 @@
 <section class="section">
   <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Neural Accelerated Rendering Framework</h2>
+        <div style="margin-top: 1rem;">
+          <div class="columns is-centered" style="margin-top: 1rem;">
+            <div class="column is-10">
+              <figure class="image">
+                <img src="./static/images/overview_train.png" alt="Overview train figure" style="width: 60%; height: auto; display: block; margin: 0 auto;">
+              </figure>
+              <div class="is-size-5 publication-authors has-text-centered" style="margin-top: 0.5rem; white-space: nowrap;">
+                Training Phase
+              </div>
             </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
           </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
+          <div class="columns is-centered" style="margin-top: 1rem;">
+            <div class="column is-10">
+              <figure class="image">
+                <img src="./static/images/overview_infer.png" alt="Overview infer figure" style="width: 60%; height: auto; display: block; margin: 0 auto;">
+              </figure>
+              <div class="is-size-5 publication-authors has-text-centered" style="margin-top: 0.5rem; white-space: nowrap;">
+                Inference Phase
+              </div>
+            </div>
           </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
+          <div class="content has-text-justified" style="margin-top: 1rem;">
+            <p>
+              In this work, we accelerate a given conventional renderer to visualize large-scale PCs in real-time. Specifically, we achieve this by learning how the view-space spatial distribution of points looks like given the color, depth, and additional point attributes that are rendered using a reference implementation of a high-quality glyph-based visualization technique. NARVis has two major components - a high-performance multi-attribute compute rasterizer (MACR) and a post-processing network. In the training phase, we provide flexibility to choose the high-quality renderer, as per the user's requirements, to create training datasets that NARVis learns to emulate. In the inference phase, MACR only needs to render the attributed points with depth testing from any position because the glyphs (geometry, orientation, texture, etc.) can be reconstructed for that view-space point/data distribution by the post-processing neural network in real-time. If the learned view-space distributions are representative enough to cover the different possible visualization configurations, each trained network can render arbitrary datasets with the same emulated glyph or visualization technique. Thus, after the offline training phase, we can deploy NARVis to render high-quality visualizations of the original or even a modified PC (such as a sub-sampled one) in real-time.
+            </p>
+          </div>
+          <div class="columns is-centered" style="margin-top: 1rem;">
+            <div class="column is-12">
+              <figure class="image">
+                <img src="./static/images/nar_deets.png" alt="Nar deets figure" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+              </figure>
+            </div>
+          </div>
+          <div class="content has-text-justified" style="margin-top: 1rem;">
+            <p>
+              Detailed view of the NARVis architecture. We take the input view and the PC to output G-buffers for different point attributes of PC with an MACR, which processes each PC attribute in render and resolve stages (shown in the expanded view), and pass them as view-dependent multi-channeled features to our post-processing network, a U-Net, to generate final renderings. Before passing to the U-Net, we down scale and apply a 1 &times; 1-Convolution (retaining the number of channels) to the rendered G-buffers and concatenate them to the first U-Net blocks at the respective resolutions. (Green blocks: down scaled and 1 &times; 1 convolved multiple G-buffers, Pink blocks: U-Net block outputs.)
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Results</h2>
+
+        <h3 class="title is-4" style="text-align: left;">Qualitative Comparison</h3>
+        <div class="content">
+          <div class="buttons has-addons is-centered" style="margin-bottom: 1rem;">
+            <button class="button is-link dataset-tab-button is-selected" type="button" data-target="hurricane-panel">Hurricane</button>
+            <button class="button is-light dataset-tab-button" type="button" data-target="storms-panel">Storms</button>
+            <button class="button is-light dataset-tab-button" type="button" data-target="morrobay-panel">Morro Bay</button>
+          </div>
+
+          <div id="hurricane-panel" class="dataset-panel">
+            <div style="overflow-x: auto;">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><img src="./static/images/comparisons/h_cr.png" alt="Hurricane CR" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comparisons/h_npbg.png" alt="Hurricane NPBG" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comparisons/h_nar.png" alt="Hurricane NARVis" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comparisons/h_gsplats.png" alt="Hurricane GR" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/comp_1/h_cr.png" alt="Hurricane CR 1" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_1/h_npbg.png" alt="Hurricane NPBG 1" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_1/h_nar.png" alt="Hurricane Ours 1" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_1/h_gsplats.png" alt="Hurricane GSplat 1" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/comp_2/h_cr.png" alt="Hurricane CR 2" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_2/h_npbg.png" alt="Hurricane NPBG 2" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_2/h_nar.png" alt="Hurricane Ours 2" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_2/h_gsplats.png" alt="Hurricane GSplat 2" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">(a) CR</td>
+                    <td style="text-align: center;">(b) NPBG</td>
+                    <td style="text-align: center;">(c) NARVis / Ours</td>
+                    <td style="text-align: center;">(d) GR / GSplat</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div id="storms-panel" class="dataset-panel is-hidden">
+            <div style="overflow-x: auto;">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><img src="./static/images/comparisons/s_cr.png" alt="Storms CR" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comparisons/s_npbg.png" alt="Storms NPBG" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comparisons/s_nar.png" alt="Storms NARVis" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comparisons/s_gsplats.png" alt="Storms GR" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/comp_1/s_cr.png" alt="Storms CR 1" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_1/s_npbg.png" alt="Storms NPBG 1" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_1/s_nar.png" alt="Storms Ours 1" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_1/s_gsplats.png" alt="Storms GSplat 1" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/comp_2/s_cr.png" alt="Storms CR 2" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_2/s_npbg.png" alt="Storms NPBG 2" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_2/s_nar.png" alt="Storms Ours 2" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_2/s_gsplats.png" alt="Storms GSplat 2" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">(a) CR</td>
+                    <td style="text-align: center;">(b) NPBG</td>
+                    <td style="text-align: center;">(c) NARVis / Ours</td>
+                    <td style="text-align: center;">(d) GR / GSplat</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div id="morrobay-panel" class="dataset-panel is-hidden">
+            <div style="overflow-x: auto;">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><img src="./static/images/comparisons/m_cr.png" alt="Morro Bay CR" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comparisons/m_npbg.png" alt="Morro Bay NPBG" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comparisons/m_nar.png" alt="Morro Bay NARVis" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comparisons/m_gsplats.png" alt="Morro Bay GR" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/comp_1/m_cr.png" alt="Morro Bay CR 1" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_1/m_npbg.png" alt="Morro Bay NPBG 1" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_1/m_nar.png" alt="Morro Bay Ours 1" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_1/m_gsplats.png" alt="Morro Bay GSplat 1" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/comp_2/m_cr.png" alt="Morro Bay CR 2" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_2/m_npbg.png" alt="Morro Bay NPBG 2" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_2/m_nar.png" alt="Morro Bay Ours 2" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                    <td><img src="./static/images/comp_2/m_gsplats.png" alt="Morro Bay GSplat 2" style="width: 100%; height: 150px; object-fit: contain; display: block; margin: 0 auto;"></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">(a) CR</td>
+                    <td style="text-align: center;">(b) NPBG</td>
+                    <td style="text-align: center;">(c) NARVis / Ours</td>
+                    <td style="text-align: center;">(d) GR / GSplat</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="title is-4" style="text-align: left;">Glyph Stylization Support</h3>
+        <div class="content has-text-justified">
+          <div class="dataset-panel" style="overflow-x: auto;">
+            <table>
+              <tbody>
+                <tr>
+                  <td style="width: 40px; text-align: center; vertical-align: middle;">
+                    <span style="display: inline-block; transform: rotate(-90deg); white-space: nowrap;">Boxes</span>
+                  </td>
+                  <td><img src="./static/images/glyphs/b.png" alt="Boxes NARVis"></td>
+                  <td><img src="./static/images/glyphs/b_t.png" alt="Boxes GT"></td>
+                  <td><img src="./static/images/glyphs/b_diff.png" alt="Boxes Diff"></td>
+                </tr>
+                <tr>
+                  <td style="width: 40px; text-align: center; vertical-align: middle;">
+                    <span style="display: inline-block; transform: rotate(-90deg); white-space: nowrap;">Cones</span>
+                  </td>
+                  <td><img src="./static/images/glyphs/c.png" alt="Cones NARVis"></td>
+                  <td><img src="./static/images/glyphs/c_t.png" alt="Cones GT"></td>
+                  <td><img src="./static/images/glyphs/c_diff.png" alt="Cones Diff"></td>
+                </tr>
+                <tr>
+                  <td style="width: 40px; text-align: center; vertical-align: middle;">
+                    <span style="display: inline-block; transform: rotate(-90deg); white-space: nowrap;">Gaussians</span>
+                  </td>
+                  <td><img src="./static/images/glyphs/g.png" alt="Gaussians NARVis"></td>
+                  <td><img src="./static/images/glyphs/g_t.png" alt="Gaussians GT"></td>
+                  <td><img src="./static/images/glyphs/g_diff.png" alt="Gaussians Diff"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td style="text-align: center;">(a) NARVis</td>
+                  <td style="text-align: center;">(b) GT</td>
+                  <td style="text-align: center;">(c) Diff</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h3 class="title is-4" style="text-align: left;">Effects of Point Cloud Resolution on Rendering Performance</h3>
+        <div class="content">
+          <div class="buttons has-addons is-centered" style="margin-bottom: 1rem;">
+            <button class="button is-link resolution-tab-button is-selected" type="button" data-target="resolution-hurricane-panel">Hurricane</button>
+            <button class="button is-light resolution-tab-button" type="button" data-target="resolution-storms-panel">Storms</button>
+            <button class="button is-light resolution-tab-button" type="button" data-target="resolution-morrobay-panel">Morro Bay</button>
+          </div>
+
+          <div id="resolution-hurricane-panel" class="dataset-panel resolution-panel">
+            <div style="overflow-x: auto;">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><img src="./static/images/sr/h_gsplat.png" alt="Hurricane GR"></td>
+                    <td><img src="./static/images/sr/h_1x.png" alt="Hurricane 1x"></td>
+                    <td><img src="./static/images/sr/h_2x.png" alt="Hurricane 2x"></td>
+                    <td><img src="./static/images/sr/h_4x.png" alt="Hurricane 4x"></td>
+                    <td><img src="./static/images/sr/h_10x.png" alt="Hurricane 10x"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/sr_1/h_gsplat.png" alt="Hurricane GSplat 1"></td>
+                    <td><img src="./static/images/sr_1/h_1x.png" alt="Hurricane 1x 1"></td>
+                    <td><img src="./static/images/sr_1/h_2x.png" alt="Hurricane 2x 1"></td>
+                    <td><img src="./static/images/sr_1/h_4x.png" alt="Hurricane 4x 1"></td>
+                    <td><img src="./static/images/sr_1/h_10x.png" alt="Hurricane 10x 1"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/sr_2/h_gsplat.png" alt="Hurricane GSplat 2"></td>
+                    <td><img src="./static/images/sr_2/h_1x.png" alt="Hurricane 1x 2"></td>
+                    <td><img src="./static/images/sr_2/h_2x.png" alt="Hurricane 2x 2"></td>
+                    <td><img src="./static/images/sr_2/h_4x.png" alt="Hurricane 4x 2"></td>
+                    <td><img src="./static/images/sr_2/h_10x.png" alt="Hurricane 10x 2"></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">(a) GSplat / GR</td>
+                    <td style="text-align: center;">(b) 1x</td>
+                    <td style="text-align: center;">(c) 2x</td>
+                    <td style="text-align: center;">(d) 4x</td>
+                    <td style="text-align: center;">(e) 10x</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div id="resolution-storms-panel" class="dataset-panel resolution-panel is-hidden">
+            <div style="overflow-x: auto;">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><img src="./static/images/sr/s_gsplat.png" alt="Storms GR"></td>
+                    <td><img src="./static/images/sr/s_1x.png" alt="Storms 1x"></td>
+                    <td><img src="./static/images/sr/s_2x.png" alt="Storms 2x"></td>
+                    <td><img src="./static/images/sr/s_4x.png" alt="Storms 4x"></td>
+                    <td><img src="./static/images/sr/s_10x.png" alt="Storms 10x"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/sr_1/s_gsplat.png" alt="Storms GSplat 1"></td>
+                    <td><img src="./static/images/sr_1/s_1x.png" alt="Storms 1x 1"></td>
+                    <td><img src="./static/images/sr_1/s_2x.png" alt="Storms 2x 1"></td>
+                    <td><img src="./static/images/sr_1/s_4x.png" alt="Storms 4x 1"></td>
+                    <td><img src="./static/images/sr_1/s_10x.png" alt="Storms 10x 1"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/sr_2/s_gsplat.png" alt="Storms GSplat 2"></td>
+                    <td><img src="./static/images/sr_2/s_1x.png" alt="Storms 1x 2"></td>
+                    <td><img src="./static/images/sr_2/s_2x.png" alt="Storms 2x 2"></td>
+                    <td><img src="./static/images/sr_2/s_4x.png" alt="Storms 4x 2"></td>
+                    <td><img src="./static/images/sr_2/s_10x.png" alt="Storms 10x 2"></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">(a) GSplat / GR</td>
+                    <td style="text-align: center;">(b) 1x</td>
+                    <td style="text-align: center;">(c) 2x</td>
+                    <td style="text-align: center;">(d) 4x</td>
+                    <td style="text-align: center;">(e) 10x</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div id="resolution-morrobay-panel" class="dataset-panel resolution-panel is-hidden">
+            <div style="overflow-x: auto;">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><img src="./static/images/sr/m_gsplat.png" alt="Morro Bay GR"></td>
+                    <td><img src="./static/images/sr/m_1x.png" alt="Morro Bay 1x"></td>
+                    <td><img src="./static/images/sr/m_2x.png" alt="Morro Bay 2x"></td>
+                    <td><img src="./static/images/sr/m_4x.png" alt="Morro Bay 4x"></td>
+                    <td><img src="./static/images/sr/m_10x.png" alt="Morro Bay 10x"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/sr_1/m_gsplat.png" alt="Morro Bay GSplat 1"></td>
+                    <td><img src="./static/images/sr_1/m_1x.png" alt="Morro Bay 1x 1"></td>
+                    <td><img src="./static/images/sr_1/m_2x.png" alt="Morro Bay 2x 1"></td>
+                    <td><img src="./static/images/sr_1/m_4x.png" alt="Morro Bay 4x 1"></td>
+                    <td><img src="./static/images/sr_1/m_10x.png" alt="Morro Bay 10x 1"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/sr_2/m_gsplat.png" alt="Morro Bay GSplat 2"></td>
+                    <td><img src="./static/images/sr_2/m_1x.png" alt="Morro Bay 1x 2"></td>
+                    <td><img src="./static/images/sr_2/m_2x.png" alt="Morro Bay 2x 2"></td>
+                    <td><img src="./static/images/sr_2/m_4x.png" alt="Morro Bay 4x 2"></td>
+                    <td><img src="./static/images/sr_2/m_10x.png" alt="Morro Bay 10x 2"></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">(a) GSplat / GR</td>
+                    <td style="text-align: center;">(b) 1x</td>
+                    <td style="text-align: center;">(c) 2x</td>
+                    <td style="text-align: center;">(d) 4x</td>
+                    <td style="text-align: center;">(e) 10x</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="title is-4" style="text-align: left;">Generalizability</h3>
+        <div class="content">
+          <div class="buttons has-addons is-centered" style="margin-bottom: 1rem;">
+            <button class="button is-link generalizability-tab-button is-selected" type="button" data-target="generalizability-within-panel">Within Dataset</button>
+            <button class="button is-light generalizability-tab-button" type="button" data-target="generalizability-across-panel">Across Datasets</button>
+          </div>
+
+          <div id="generalizability-within-panel" class="generalizability-panel dataset-panel">
+            <div style="overflow-x: auto;">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><img src="./static/images/genexp/s1.png" alt="Within dataset source 1"></td>
+                    <td><img src="./static/images/genexp/t1.png" alt="Within dataset target 1"></td>
+                    <td><img src="./static/images/genexp/g1.png" alt="Within dataset GR 1"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/genexp/s2.png" alt="Within dataset source 2"></td>
+                    <td><img src="./static/images/genexp/t2.png" alt="Within dataset target 2"></td>
+                    <td><img src="./static/images/genexp/g2.png" alt="Within dataset GR 2"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/genexp/s3.png" alt="Within dataset source 3"></td>
+                    <td><img src="./static/images/genexp/t3.png" alt="Within dataset target 3"></td>
+                    <td><img src="./static/images/genexp/g3.png" alt="Within dataset GR 3"></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">(a) Source PC</td>
+                    <td style="text-align: center;">(b) Target PC</td>
+                    <td style="text-align: center;">(c) GR</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="is-size-6 has-text-justified" style="margin-top: 0.75rem;">
+              Generalizability Within Dataset. NARVis learns post-processing effects from a source PC and applies them to a target PC within the same dataset family despite variations in geometry and properties, with GR renderings shown for reference.
+            </p>
+          </div>
+
+          <div id="generalizability-across-panel" class="generalizability-panel dataset-panel is-hidden">
+            <div style="overflow-x: auto;">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><img src="./static/images/genexp_glyph/nar1.png" alt="Across datasets target 1"></td>
+                    <td><img src="./static/images/genexp_glyph/para1.png" alt="Across datasets GT 1"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/genexp_glyph/nar2.png" alt="Across datasets target 2"></td>
+                    <td><img src="./static/images/genexp_glyph/para2.png" alt="Across datasets GT 2"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./static/images/genexp_glyph/nar3.png" alt="Across datasets target 3"></td>
+                    <td><img src="./static/images/genexp_glyph/para3.png" alt="Across datasets GT 3"></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">(b) Target PC</td>
+                    <td style="text-align: center;">(c) GT</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="is-size-6 has-text-justified" style="margin-top: 0.75rem;">
+              Generalizability Across Datasets. NARVis transfers learned post-processing effects across datasets with compatible parameter mappings, trained on source data and evaluated on a different target dataset with ground-truth renderings for comparison.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="title is-4" style="text-align: left;">Performance and Speedup</h3>
+        <div class="content has-text-justified">
+          <div class="content has-text-centered" style="margin-bottom: 1rem;">
+            <img src="./static/images/runtime_memory.png" alt="Runtime and memory performance" style="width: 100%; height: auto;">
+          </div>
+          <p>
+            NARVis balances rendering latency and quality and outperforms the other renderers in rendering quality across all the datasets. It is only slower than high-performance CR which has lower visual fidelity than NARVis as it renders points as pixels. GR has the highest image quality as it is our reference renderer. However, GR also has a high rendering latency due to the increased alpha blending overheads (involving sorting) in large PCs. NPBG, an NN based method, has better rendering quality than CR but is memory intensive and slow as it uses per-point descriptors. NPBG also has a higher latency as its OpenGL rasterizer uses GL_POINTS primitive to render frames at multiple image resolutions, making it unscalable for real-time rendering of large full-resolution PCs.
+          </p>
+        </div>
+      </div>
+    </div>
 
   </div>
 </section>
@@ -444,11 +611,12 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@inproceedings{hegde2026narvis,
+  author    = {Hegde, Srinidhi and Kullman, Kaur and Grubb, Thomas and Lait, Leslie and Guimond, Stephen and Zwicker, Matthias},
+  title     = {NARVis: Neural Accelerated Rendering for Real-Time Scientific Point Cloud Visualization},
+  booktitle = {2026 IEEE Pacific Visualization Conference (PacificVis)},
+  year      = {2026},
+  organization = {IEEE}
 }</code></pre>
   </div>
 </section>
@@ -458,10 +626,10 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+         href="https://arxiv.org/pdf/2407.19097">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/narvis" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -475,10 +643,8 @@
           </p>
           <p>
             This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+              href="#">source code</a> of this website,
             we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
           </p>
         </div>
       </div>
